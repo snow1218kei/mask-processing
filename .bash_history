@@ -1,20 +1,3 @@
-curl www.kantei.go.jp
-sudo yum update -y
-sudo yum -y install httpd
-sudo systemctl start httpd.service
-sudo systemctl status httpd.service
-sudo systemctl enable httpd.service
-sudo systemctl is-enabled httpd.service
-sudo yum -y install mysql
-mysql -h database-1.ckvmsknhbfzt.ap-northeast-1.rds.amazonaws.com -u de_master -p
-sudo yum install -y git
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-source ~/.bashrc
-exec $SHELL -l
-sudo yum -y install gcc gcc-c++ make bzip2 libyaml-devel libffi-devel zlib-devel openssl-devel readline-devel gdbm-devel ncurses-devel
 rbenv rehash
 rbenv install 3.0.2
 rbenv global 3.0.2
@@ -984,3 +967,34 @@ tree -L 2
 cat masking_and_import.rb
 cat mask_processing.rb
 cat active_record.rb
+tree -L 2
+mv try.sh masking_and_import.sh
+tree -L 2
+vi .gitignore
+cat/etc/your.cnf
+cat etc/your.cnf
+cat masking_and_import.sh
+mv etc/your.cnf etc/.your.cnf
+tree -L 2
+vi masking_and_import.sh
+rm masking_and_import.rb excute_all_process.rb
+mv masking_and_import.rb excute_all_process.rb
+tree -L 2
+touch excute_all_process
+vi excute_all_process
+tree -L 2
+touch excute_all_process.rb
+vi excute_all_process.rb
+rm excute_all_process
+tree -L 2
+mv excute_all_process.rb masking_and_import.rb
+mv masking_and_import.sh excute_all_process.sh
+tree -L 2
+cat excute_all_process.sh
+git remote
+git remote -v
+git add .
+cat .gitignore
+vi .gitignore
+cat gitignore
+cat .gitignore
